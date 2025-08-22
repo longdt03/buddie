@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Buddie — Learn & Chat English</title>
+  <meta name="description" content="Buddie helps you practice and chat in English with an AI-powered companion. Simple, fast, privacy‑minded." />
+  <meta property="og:title" content="Buddie — Learn & Chat English" />
+  <meta property="og:description" content="Practice speaking and writing with Buddie, your AI English companion. Simple, fast, privacy‑minded." />
+  <meta property="og:type" content="website" />
+  <meta name="apple-itunes-app" content="app-id=id6749777624" />
+  <style>
+    :root { --bg:#0b0b10; --card:#12131a; --text:#e9ecf1; --muted:#a9b0bb; --accent:#0866FF; }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
+    .wrap{max-width:960px;margin:0 auto;padding:32px 20px;}
+    .hero{display:grid;gap:20px;grid-template-columns:1.1fr .9fr;align-items:center}
+    @media (max-width:800px){.hero{grid-template-columns:1fr}}
+    .badge{display:inline-block;padding:6px 10px;border:1px solid #2a2e37;border-radius:999px;color:var(--muted);font-size:12px;letter-spacing:.3px}
+    h1{font-size:42px;line-height:1.1;margin:8px 0 12px}
+    p{color:var(--muted);font-size:16px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+    .btn{appearance:none;border:0;border-radius:16px;padding:14px 18px;background:var(--accent);color:white;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:10px}
+    .btn.secondary{background:#212633;color:var(--text)}
+    .card{background:var(--card);border:1px solid #1c2030;border-radius:24px;padding:20px}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
+    @media (max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+    @media (max-width:600px){.grid{grid-template-columns:1fr}}
+    .feat h3{margin:8px 0 6px;font-size:18px}
+    .section{margin-top:36px}
+    .pricing{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+    @media (max-width:720px){.pricing{grid-template-columns:1fr}}
+    .small{font-size:12px;color:var(--muted)}
+    footer{margin:40px 0 10px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;color:var(--muted);font-size:13px}
+    .mono{font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;}
+    .screenshots{display:grid;gap:16px;grid-template-columns:repeat(2,1fr)}
+    @media (max-width:720px){.screenshots{grid-template-columns:1fr}}
+    .screenshots img{width:100%;border-radius:24px;border:1px solid #1c2030;object-fit:cover}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div>
+        <span class="badge">AI English Companion</span>
+        <h1>Buddie — Practice, chat, and improve your English</h1>
+        <p>Buddie makes daily English practice effortless. Chat with an AI tutor, get instant feedback, and track your progress — all in a clean, distraction‑free app.</p>
+        <div class="cta">
+          <a class="btn" href="https://apps.apple.com/app/id6749777624" aria-label="Download Buddie on the App Store">Download on the App Store</a>
+        </div>
+        <p class="small">Runs on iPhone (iPad compatible in iPhone mode).</p>
+      </div>
+      <div class="screenshots">
+        <img src="https://longdt03.github.io/buddie/screenshot_1.png" alt="Buddie Screenshot 1">
+        <img src="https://longdt03.github.io/buddie/screenshot_2.png" alt="Buddie Screenshot 2">
+        <img src="https://longdt03.github.io/buddie/screenshot_3.png" alt="Buddie Screenshot 3">
+        <img src="https://longdt03.github.io/buddie/screenshot_4.png" alt="Buddie Screenshot 4">
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="card">
+        <h2 style="margin:0 0 6px">Privacy</h2>
+        <p>We use Firebase Authentication for secure login. Authentication data is stored on Firebase Authentication. All other app data is stored locally on your device and is not synced to any external database.</p>
+        <p class="small">Read the full <a href="https://longdt03.github.io/buddie/privacy_policy.html" style="color:var(--text)">Privacy Policy</a>.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Buddie</div>
+      <div class="mono">Support: thuy.22796@gmail.com</div>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
